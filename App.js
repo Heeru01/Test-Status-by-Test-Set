@@ -563,7 +563,7 @@ launch: function() {
                         if (percentComplete > 1) {
                         	percentComplete = 1;
                         }
-                        var testingPercentPass = (passTestSetCounts[index]/((passTestSetCounts[index] + failTestSetCounts[index] + blockedTestSetCounts[index] + errorTestSetCounts[index] + otherTestSetCounts[index]))) || 0;
+                        var testingPercentPass = (passTestSetCounts[index]/(totalTestSetCounts[index])) || 0;
                         if (testingPercentPass > 1) {
                         	testingPercentPass = 1;
                         }
